@@ -1,0 +1,84 @@
+.howitworks {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+  padding: 80px 20px;
+  background: #f0f9ff;
+  text-align: center;
+}
+
+.howitworks.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.how-intro {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Step Card */
+.step-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Step Icon */
+.step-icon {
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.step-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.step-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .howitworks h2 {
+    font-size: 2rem;
+  }
+}

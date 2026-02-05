@@ -1,0 +1,85 @@
+.pricing {
+  padding: 80px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.pricing-intro {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* GRID */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.pricing-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Price */
+.price {
+  font-size: 28px;
+  color: #22c55e;
+  margin: 10px 0 20px;
+  font-weight: bold;
+}
+
+/* Features */
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card li {
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* CTA */
+.btn-pricing {
+  display: inline-block;
+  background: #22c55e;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-pricing:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .pricing h2 {
+    font-size: 2rem;
+  }
+}
